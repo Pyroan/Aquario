@@ -4,8 +4,8 @@ import sys
 import curses
 from time import time
 
-from bubbler import Bubbler
-from water import Water
+from entities.bubbler import Bubbler
+from entities.water import Water
 
 entities = []
 
