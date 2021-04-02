@@ -49,23 +49,20 @@ class Bubble:
 # Particle generator
 class Bubbler:
 
-    def __init__(self, height: int, emit_rate: float, max_particles: int, velocity_min: Vector2, velocity_max: Vector2):
+    def __init__(self, height: int, emit_rate: float):
         self.particles = []
         self.x = 5
         self.y = 0
 
         self.height = height
         self.emit_rate = emit_rate
-        self.max_particles = max_particles
-        self.velocity_min = velocity_min
-        self.velocity_max = velocity_max
 
     def update(self, delta_time):
         for p in self.particles:
             delete = p.update(delta_time)
             if delete:
                 self.particles.remove(p)
-        # i'm literally just making this shit up at this point
+        # i'm literally just making this stuff up at this point
         if random.randint(0, 100) < self.emit_rate:
             self.particles.append(
                 Bubble(self.x+3, self.y+2+self.height, random.randrange(0, 100)))

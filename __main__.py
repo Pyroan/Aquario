@@ -2,10 +2,12 @@ import sys
 
 # Windows support is for losers who know how to make curses work.
 import curses
+import random
 from time import time
 
 from entities.bubbler import Bubbler
 from entities.water import Water
+from entities.fish import Fish
 
 entities = []
 
@@ -36,7 +38,11 @@ def main(stdscr):
 
     # Add water
     entities.append(Water(2))
-    entities.append(Bubbler(10, 90, 30, 1, 4))
+    entities.append(Bubbler(curses.LINES//2, 90))
+
+    for i in range(5):
+        entities.append(Fish(random.randint(5, curses.COLS - 5),
+                             random.randint(5, curses.LINES - 8), random.randint(0, 1)))
     # Main Loop
     running = True
     while(running):
