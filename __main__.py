@@ -7,6 +7,7 @@ from time import time
 
 from aquario.entities.bubbler import Bubbler
 from aquario.entities.water import Water
+from aquario.entities.gravel import Gravel
 from aquario.entities.fish import Fish
 
 entities = []
@@ -39,6 +40,8 @@ def main(stdscr):
     # Add water
     entities.append(Water(2))
     entities.append(Bubbler(curses.LINES//2, 90))
+
+    entities.append(Gravel())
 
     for i in range(5):
         entities.append(Fish(random.randint(5, curses.COLS - 5),

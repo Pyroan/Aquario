@@ -9,7 +9,7 @@ from .entity import Entity
 from aquario.util import Vector2
 
 
-class Bubble:
+class Bubble(Entity):
     life = 0
     char = '.'
 
