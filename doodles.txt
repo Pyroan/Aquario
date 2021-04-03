@@ -3,7 +3,3 @@ kelp: generated programmatically
   //   (
   \\    )
   //   (
-OoOOooOOOooOOOOooOoOooOOoOO
-  O   o        o    O  o  o
-o         O      o       O
-gravel: also programmatic
