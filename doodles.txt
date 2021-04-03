@@ -1,9 +1,4 @@
-     _____
-  /---------\
- |=====O=====|
- |-----^-----|
- |___________| 
-
+kelp: generated programmatically
   |\
   //   (
   \\    )
@@ -11,14 +6,4 @@
 OoOOooOOOooOOOOooOoOooOOoOO
   O   o        o    O  o  o
 o         O      o       O
-
-    ~ 
-    |\
-    ) O.
-  ~ |. _==
-  )}|. \
-  ~ |. )
-    /./
-   /./_
-   | < \
-    \__/
+gravel: also programmatic
