@@ -1,7 +1,0 @@
-# Making up my own encoding for ascii assets i guess
-1 "fish1"
-><)'>
-3 "fish2"
-  )\
->{|)'>
-  )/

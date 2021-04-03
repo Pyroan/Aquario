@@ -5,9 +5,9 @@ import curses
 import random
 from time import time
 
-from entities.bubbler import Bubbler
-from entities.water import Water
-from entities.fish import Fish
+from aquario.entities.bubbler import Bubbler
+from aquario.entities.water import Water
+from aquario.entities.fish import Fish
 
 entities = []
 
