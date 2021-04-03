@@ -41,7 +41,7 @@ def main(stdscr):
     entities.append(Water(2))
     entities.append(Bubbler(curses.LINES//2, 90))
 
-    entities.append(Gravel())
+    entities.append(Gravel(height=5, density=9))
 
     for i in range(5):
         entities.append(Fish(random.randint(5, curses.COLS - 5),
