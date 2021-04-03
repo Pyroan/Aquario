@@ -2,8 +2,10 @@
 # reactive to bubbles + fish food and stuff
 import curses
 
+from .entity import Entity
 
-class Water:
+
+class Water(Entity):
     def __init__(self, y):
         self.y = y
 

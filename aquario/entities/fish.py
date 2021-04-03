@@ -3,9 +3,11 @@ import curses
 import random
 import math
 from time import time
-from util import Vector2
 
-class Fish:
+from aquario.util import Vector2
+from .entity import Entity
+
+class Fish(Entity):
     IDLE = 1
 
     def __init__(self, x: int, y: int, reflected: bool):

@@ -4,7 +4,9 @@ import curses
 import random
 import math
 from time import time
-from util import Vector2
+
+from .entity import Entity
+from aquario.util import Vector2
 
 
 class Bubble:
@@ -47,7 +49,7 @@ class Bubble:
 
 
 # Particle generator
-class Bubbler:
+class Bubbler(Entity):
 
     def __init__(self, height: int, emit_rate: float):
         self.particles = []
