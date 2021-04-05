@@ -17,7 +17,7 @@ class Fish(Entity):
         self.state = self.IDLE
         self.reflected = reflected
 
-        with open(CONFIG.assets_folder + "fish2.txt") as f:
+        with open(CONFIG.assets_folder + "fish" + str(random.randint(1,2)) + ".txt") as f:
             self.sprite = []
             for line in f.readlines():
                 self.sprite.append(line.strip('\n'))
